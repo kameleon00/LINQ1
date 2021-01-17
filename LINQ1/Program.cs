@@ -16,9 +16,9 @@ namespace LINQ1
             //1) niz stringova
             string[] voce = { "maline", "kupine", "jabuke", "kruske", "kajsije", "breskve", "banane", "pomorandze", "kesten", "nektarine" };
 
-            var rezultat = from n in voce
-                           where n.StartsWith("k")
-                           select n;
+            var rezultat = from n in voce //predstavlja neki elemenat koji smo označili sa n da se nalazi u kolekciji voce
+                           where n.StartsWith("k") //ooperator ogranicenja
+                           select n; ////predstavlja neki elemenat koji smo označili sa n da se nalazi u kolekciji voce
 
             Console.WriteLine("Nazivi voca koju pocinju sa k su: ");
             foreach (var v in rezultat)
